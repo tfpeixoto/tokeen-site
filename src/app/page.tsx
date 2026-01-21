@@ -1,19 +1,25 @@
-import Header from "@/src/components/Header";
 import Hero from "@/src/components/Hero";
-import WhatsappButton from "@/src/components/WhatsappButton";
 import BlogList from "@/src/components/BlogList";
-import Footer from "@/src/components/Footer";
+import Highlight from "@/src/components/Highlight";
 import IntroSection from "@/src/components/IntroSection";
+import pageContent from "@/src/data/home.json";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Tokeen - O dinheiro de amanhã, trabalhando hoje",
+  description:
+    "Com o pagamento direto de compromissos dos recebíveis das maquininhas o dinheiro futuro se transforma em mais vendas – com mais controle, menos custo e zero burocracia.",
+};
 
 export default async function Home() {
+  const { hero, hightlight } = pageContent;
+
   return (
-    <main className="bg-[url('/bg-hero.png')] bg-contain bg-top bg-no-repeat">
-      <Header />
-      <Hero />
+    <>
+      <Hero title={hero.title} description={hero.description} />
+      <Highlight content={hightlight.content} />
       <IntroSection />
       <BlogList />
-      <WhatsappButton />
-      <Footer />
-    </main>
+    </>
   );
 }

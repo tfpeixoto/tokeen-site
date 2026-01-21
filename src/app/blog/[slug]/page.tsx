@@ -60,9 +60,11 @@ export default async function PostPage({
     <article className="max-w-3xl mx-auto px-4 py-12">
       <header className="mb-8 border-b pb-8">
         <h1 className="text-4xl font-bold mb-2 text-white">{post.title}</h1>
+
         <p className="text-gray-500 text-sm">
           Publicado em: {new Date(post._createdAt).toLocaleDateString("pt-BR")}
         </p>
+
         <Link href={`/`} className="text-sm text-white">
           ← Voltar
         </Link>

@@ -1,0 +1,36 @@
+{
+  "header": {
+    "logo": {
+      "src": "/marca-tokeen.svg",
+      "alt": "Marca Tokeen",
+      "width": "290",
+      "height": "72"
+    },
+    "menu": [
+      {
+        "label": "Como funciona?",
+        "href": "/como-funciona"
+      },
+      {
+        "label": "Quem somos?",
+        "href": "/quem-somos"
+      },
+      {
+        "label": "Endentendo o assunto",
+        "href": "/entendendo-assunto"
+      },
+      {
+        "label": "Fale com nosso time",
+        "href": "/fale-conosco"
+      }
+    ],
+    "cta": {
+      "label": "Entre",
+      "href": "https://app.tokeen.com.br/login",
+      "target": "_blank"
+    }
+  },
+  "footer": {
+    "copyright": "© 2026 Tokeen. Todos os direitos reservados."
+  }
+}

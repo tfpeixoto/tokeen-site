@@ -1,0 +1,24 @@
+{
+  "hero": {
+    "title": "O dinheiro de <strong>amanhã</strong>, trabalhando hoje.",
+    "description": "Com o pagamento direto de compromissos dos recebíveis das maquininhas o dinheiro futuro se transforma em mais vendas – com <strong>mais controle, menos custo e zero burocracia.</strong>"
+  },
+  "hightlight": {
+    "content": "Crédito mais justo com recebíveis como garantia"
+  },
+  "introSection": {
+    "image": {
+      "src": "/credito-justo.png",
+      "alt": "Crédito com recebíveis",
+      "width": 400,
+      "height": 300
+    },
+    "content": {
+      "subtitle": "isso vai resolvendo a vida de todo mundo",
+      "paragraphs": [
+        "O franqueado quita dívidas com fornecedores e royalties sem custo de antecipação...",
+        "...e a franquia reduz risco, organiza o fluxo e cresce com mais equilíbrio."
+      ]
+    }
+  }
+}

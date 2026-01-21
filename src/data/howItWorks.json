@@ -1,0 +1,29 @@
+{
+  "title": "Como funciona",
+  "computer": {
+    "src": "/como-funciona-computador.png",
+    "alt": "Fluxo de como funciona o Tokeen"
+  },
+  "list": [
+    {
+      "title": "Plataforma Tokeen",
+      "content": "A plataforma Tokeen é uma infraestrutura digital que faz o dinheiro circular entre empresas com <strong>segurança, transparência e estabilidade</strong>, unindo uma experiência simples a uma tecnologia robusta"
+    },
+    {
+      "title": "Desempenho e estabilidade",
+      "content": "E, graças à sua <strong>arquitetura distribuída</strong>, a Tokeen oferece desempenho estável, rápido e escalável, suportando o crescimento e as operações de milhares de empresas com total confiança."
+    },
+    {
+      "title": "Proteção constante e inteligente",
+      "content": "Sua proteção é reforçada por <strong>firewalls inteligentes (WAF) e backups com redundância geográfica</strong>, que asseguram continuidade mesmo diante de falhas ou tentativas de invasão."
+    },
+    {
+      "title": "Segurança em cada transação",
+      "content": "Ela protege cada transação com <strong>criptografia de ponta a ponta e autenticação multifatorial</strong>, garantindo que apenas usuários autorizados acessem as informações."
+    }
+  ],
+  "flow": {
+    "src": "/fluxo-como-funciona.png",
+    "alt": "Fluxo de como funciona o Tokeen"
+  }
+}

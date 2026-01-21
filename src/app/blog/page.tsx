@@ -1,6 +1,5 @@
 import { client } from "@/sanity/client";
 import Link from "next/link";
-import Header from "@/src/components/Header";
 import Container from "@/src/components/Container";
 
 async function getPosts() {
@@ -11,13 +10,11 @@ export default async function BlogPage() {
   const posts = await getPosts();
 
   return (
-    <main>
-      <Header />
-
+    <>
       <Container>
         <div className="space-y-6">
           {posts.map((post: any) => (
-            <article key={post._id} className="border-b border-gray-200 pb-6">
+            <article key={post._id} className="pb-6">
               <Link
                 href={`/blog/${post.slug.current}`}
                 className="block hover:opacity-80 transition-opacity"
@@ -25,6 +22,7 @@ export default async function BlogPage() {
                 <h2 className="text-2xl font-semibold mb-2 text-white hover:text-blue-600">
                   {post.title}
                 </h2>
+
                 <p className="text-gray-500 text-sm">
                   {new Date(post._createdAt).toLocaleDateString("pt-BR")}
                 </p>
@@ -33,6 +31,6 @@ export default async function BlogPage() {
           ))}
         </div>
       </Container>
-    </main>
+    </>
   );
 }

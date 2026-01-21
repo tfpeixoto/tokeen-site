@@ -1,3 +1,5 @@
+import Image from "next/image";
+import Container from "@/src/components/Container";
 import Hero from "@/src/components/Hero";
 import BlogList from "@/src/components/BlogList";
 import Highlight from "@/src/components/Highlight";
@@ -12,13 +14,19 @@ export const metadata: Metadata = {
 };
 
 export default async function Home() {
-  const { hero, hightlight } = pageContent;
+  const { hero, hightlight, hightlight2, flow } = pageContent;
 
   return (
     <>
       <Hero title={hero.title} description={hero.description} />
       <Highlight content={hightlight.content} />
       <IntroSection />
+      <Highlight content={hightlight2.content} />
+      <section>
+        <Container>
+          <Image src={flow.src} alt={flow.alt} width={800} height={600} />
+        </Container>
+      </section>
       <BlogList />
     </>
   );

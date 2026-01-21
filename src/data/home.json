@@ -20,5 +20,12 @@
         "...e a franquia reduz risco, organiza o fluxo e cresce com mais equilíbrio."
       ]
     }
+  },
+  "hightlight2": {
+    "content": "Tudo de forma <strong>simples, rápida e transparente</strong>"
+  },
+  "flow": {
+    "src": "/fluxo-como-funciona.png",
+    "alt": "Fluxo de como funciona o Tokeen"
   }
 }

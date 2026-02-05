@@ -1,27 +1,114 @@
 {
   "hero": {
     "title": "O dinheiro de <strong>amanhã</strong>, trabalhando hoje.",
-    "description": "Com o pagamento direto de compromissos dos recebíveis das maquininhas o dinheiro futuro se transforma em mais vendas – com <strong>mais controle, menos custo e zero burocracia.</strong>"
-  },
-  "hightlight": {
-    "content": "Crédito mais justo com recebíveis como garantia"
-  },
-  "introSection": {
-    "image": {
-      "src": "/credito-justo.png",
-      "alt": "Crédito com recebíveis",
-      "width": 400,
-      "height": 300
-    },
-    "content": {
-      "subtitle": "isso vai resolvendo a vida de todo mundo",
-      "paragraphs": [
-        "O franqueado quita dívidas com fornecedores e royalties sem custo de antecipação...",
-        "...e a franquia reduz risco, organiza o fluxo e cresce com mais equilíbrio."
-      ]
+    "description": "Transforme recebíveis em mais negócios: crédito inteligente com menos risco e controle total.",
+    "button": {
+      "label": "Descubra como",
+      "href": "#"
     }
   },
-  "hightlight2": {
+  "carousel": {
+    "title": "Crédito seguro com a fortaleza dos recebíveis de cartão",
+    "subtitle": "Isso vai resolvendo a vida de todo mundo…",
+    "items": [
+      {
+        "title": "Distribuidores e Indústrias",
+        "tagline": "Venda a prazo, receba garantido",
+        "description": "Ofereça melhores condições comerciais para sua rede de revendas sem risco de inadimplência. Seus clientes compram mais com prazo estendido usando os próprios recebíveis como garantia, você vende mais mantendo fluxo de caixa previsível e relacionamento fortalecido.",
+        "image": {
+          "src": "/credito-justo.png",
+          "alt": "Distribuidores e Indústrias",
+          "width": 400,
+          "height": 300
+        },
+        "button": {
+          "label": "Conheça as Soluções",
+          "href": "/solucoes"
+        },
+        "whatsapp": {
+          "label": "Fale com nosso time",
+          "href": "https://wa.me/551152399752?text=Olá,%20estava%20acessando%20o%20site%20Tokeen%20e%20gostaria%20de%20falar%20com%20o%20time"
+        }
+      },
+      {
+        "title": "Franquias, Shopping Centers e Imobiliárias",
+        "tagline": "Receba sempre, sem cobrar nunca",
+        "description": "Automatize cobranças de aluguéis, royalties e taxas recorrentes debitando diretamente dos recebíveis dos lojistas. Você recebe com previsibilidade total e zero atrito, seus inquilinos e franqueados pagam automaticamente sem complicações ou atrasos que desgastam o relacionamento.",
+        "image": {
+          "src": "/credito-justo.png",
+          "alt": "Franquias, Shopping Centers e Imobiliárias",
+          "width": 400,
+          "height": 300
+        },
+        "button": {
+          "label": "Conheça as Soluções",
+          "href": "/solucoes"
+        },
+        "whatsapp": {
+          "label": "Fale com nosso time",
+          "href": "https://wa.me/551152399752?text=Olá,%20estava%20acessando%20o%20site%20Tokeen%20e%20gostaria%20de%20falar%20com%20o%20time"
+        }
+      },
+      {
+        "title": "Atacarejos",
+        "tagline": "Crédito que diferencia, vendas que multiplicam",
+        "description": "Ofereça crédito exclusivo para clientes PJ que seus concorrentes não conseguem igualar. Seus clientes empresariais compram em volume com prazo estendido garantido por recebíveis ou boleto autoliquidável, você aumenta ticket médio e fideliza sem adicionar risco ao negócio.",
+        "image": {
+          "src": "/credito-justo.png",
+          "alt": "Atacarejos",
+          "width": 400,
+          "height": 300
+        },
+        "button": {
+          "label": "Conheça as Soluções",
+          "href": "/solucoes"
+        },
+        "whatsapp": {
+          "label": "Fale com nosso time",
+          "href": "https://wa.me/551152399752?text=Olá,%20estava%20acessando%20o%20site%20Tokeen%20e%20gostaria%20de%20falar%20com%20o%20time"
+        }
+      },
+      {
+        "title": "FIDCs e Instituições Financeiras",
+        "tagline": "Fortaleça seus produtos PJ com infraestrutura completa de recebíveis",
+        "description": "Infraestrutura tecnológica completa para operar antecipação, colateralização ou análise de crédito baseada em recebíveis de cartão. Time dedicado, integrações prontas com registradoras e plataforma proprietária para gestão de liquidação, conciliação e baixa.",
+        "image": {
+          "src": "/credito-justo.png",
+          "alt": "FIDCs e Instituições Financeiras",
+          "width": 400,
+          "height": 300
+        },
+        "button": {
+          "label": "Conheça as Soluções",
+          "href": "/solucoes"
+        },
+        "whatsapp": {
+          "label": "Fale com nosso time",
+          "href": "https://wa.me/551152399752?text=Olá,%20estava%20acessando%20o%20site%20Tokeen%20e%20gostaria%20de%20falar%20com%20o%20time"
+        }
+      },
+      {
+        "title": "Proteja Suas Vendas a Prazo",
+        "tagline": "Adicione já proteção automática contra inadimplência",
+        "description": "Recupere valores em atraso automaticamente dos recebíveis de clientes, sem call center, processos judiciais ou desgaste no relacionamento. Você elimina custos de cobrança, seus clientes evitam negativação e mantêm acesso aos seus produtos - todos saem ganhando.",
+        "image": {
+          "src": "/credito-justo.png",
+          "alt": "Proteja Suas Vendas a Prazo",
+          "width": 400,
+          "height": 300
+        },
+        "button": {
+          "label": "Conheça as Soluções",
+          "href": "/solucoes"
+        },
+        "whatsapp": {
+          "label": "Fale com nosso time",
+          "href": "https://wa.me/551152399752?text=Olá,%20estava%20acessando%20o%20site%20Tokeen%20e%20gostaria%20de%20falar%20com%20o%20time"
+        }
+      }
+    ]
+  },
+  "hightlight": {
     "content": "Tudo de forma <strong>simples, rápida e transparente</strong>"
   },
   "flow": {

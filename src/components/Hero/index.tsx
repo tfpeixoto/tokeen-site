@@ -10,7 +10,7 @@ export default function Hero({ title, description }: HeroProps) {
     <section className="text-center">
       <Container>
         <h1
-          className="text-6xl py-20 font-extralight mb-4"
+          className="text-5xl md:text-6xl py-20 font-extralight mb-4"
           dangerouslySetInnerHTML={{ __html: title }}
         />
         <p

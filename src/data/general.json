@@ -8,16 +8,16 @@
     },
     "menu": [
       {
-        "label": "Como funciona?",
-        "href": "/como-funciona"
+        "label": "Soluções",
+        "href": "/solucoes"
+      },
+      {
+        "label": "Endentendo o assunto",
+        "href": "/entendendo-do-assunto"
       },
       {
         "label": "Quem somos?",
         "href": "/quem-somos"
-      },
-      {
-        "label": "Endentendo o assunto",
-        "href": "/entendendo-assunto"
       },
       {
         "label": "Fale com nosso time",
@@ -31,6 +31,24 @@
     }
   },
   "footer": {
+    "info": "Razão Social: Tokeen Intermediações Ltda<br />CNPJ: 49.890.552/0001-01<br />Endereço: Rua do Rocio, 291, 8º andar - Conj 82 - Vila Olímpia, São Paulo/SP",
+    "social": [
+      {
+        "name": "email",
+        "icon": "faEnvelope",
+        "url": "mailto:contato@tokeen.com.br"
+      },
+      {
+        "name": "linkedin",
+        "icon": "faLinkedin",
+        "url": "https://linkedin.com/company/tokeen"
+      },
+      {
+        "name": "instagram",
+        "icon": "faInstagram",
+        "url": "https://instagram.com/tokeen_oficial"
+      }
+    ],
     "copyright": "© 2026 Tokeen. Todos os direitos reservados."
   }
 }

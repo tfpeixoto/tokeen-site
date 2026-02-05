@@ -4,7 +4,7 @@ export default function WhatsappButton() {
       href="https://wa.me/5511999999999"
       target="_blank"
       rel="noopener noreferrer"
-      className="flex h-auto gap-3 fixed bottom-10 text-2xl right-10 bg-green-500 hover:bg-green-600 text-white rounded-2xl p-4 shadow-lg"
+      className="flex h-auto items-center gap-2 fixed bottom-10 text-lg right-10 bg-green-500 hover:bg-green-600 text-white rounded-2xl p-4 shadow-lg z-10"
     >
       <svg
         xmlns="http://www.w3.org/2000/svg"

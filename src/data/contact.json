@@ -1,8 +1,19 @@
 {
   "title": "Fale com nosso time",
-  "content": "A Tokeen conecta tecnologia, governança, inteligência financeira e transparência para destravar crescimento. Se quiser entender como isso pode funcionar no seu contexto, fale com nosso time — teremos prazer em orientar você.",
+  "content": "Tokeen conecta tecnologia, governança, inteligência financeira e transparência para destravar crescimento sustentável nas relações comerciais. Vamos conversar sobre como transformar garantias em mais vendas e receita.",
   "image": {
     "src": "/fale-conosco-tokeen.png",
     "alt": "Mulher sorridente utilizando o computador com estantes ao fundo"
+  },
+  "lastnews": {
+    "title": "Como a Resolução CMN nº 4.734 veio mudar o mercado de crédito",
+    "excerpt": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tinci",
+    "url": "https://globo.com",
+    "image": {
+      "src": "/distribuidores.png",
+      "alt": "Distribuidores e Indústrias",
+      "width": 400,
+      "height": 300
+    }
   }
 }

@@ -16,7 +16,7 @@
         "tagline": "Venda a prazo, receba garantido",
         "description": "Ofereça melhores condições comerciais para sua rede de revendas sem risco de inadimplência. Seus clientes compram mais com prazo estendido usando os próprios recebíveis como garantia, você vende mais mantendo fluxo de caixa previsível e relacionamento fortalecido.",
         "image": {
-          "src": "/credito-justo.png",
+          "src": "/distribuidores.png",
           "alt": "Distribuidores e Indústrias",
           "width": 400,
           "height": 300
@@ -35,7 +35,7 @@
         "tagline": "Receba sempre, sem cobrar nunca",
         "description": "Automatize cobranças de aluguéis, royalties e taxas recorrentes debitando diretamente dos recebíveis dos lojistas. Você recebe com previsibilidade total e zero atrito, seus inquilinos e franqueados pagam automaticamente sem complicações ou atrasos que desgastam o relacionamento.",
         "image": {
-          "src": "/credito-justo.png",
+          "src": "/franquias.png",
           "alt": "Franquias, Shopping Centers e Imobiliárias",
           "width": 400,
           "height": 300
@@ -54,7 +54,7 @@
         "tagline": "Crédito que diferencia, vendas que multiplicam",
         "description": "Ofereça crédito exclusivo para clientes PJ que seus concorrentes não conseguem igualar. Seus clientes empresariais compram em volume com prazo estendido garantido por recebíveis ou boleto autoliquidável, você aumenta ticket médio e fideliza sem adicionar risco ao negócio.",
         "image": {
-          "src": "/credito-justo.png",
+          "src": "/atacarejos.png",
           "alt": "Atacarejos",
           "width": 400,
           "height": 300
@@ -73,7 +73,7 @@
         "tagline": "Fortaleça seus produtos PJ com infraestrutura completa de recebíveis",
         "description": "Infraestrutura tecnológica completa para operar antecipação, colateralização ou análise de crédito baseada em recebíveis de cartão. Time dedicado, integrações prontas com registradoras e plataforma proprietária para gestão de liquidação, conciliação e baixa.",
         "image": {
-          "src": "/credito-justo.png",
+          "src": "/fidcs.png",
           "alt": "FIDCs e Instituições Financeiras",
           "width": 400,
           "height": 300
@@ -92,7 +92,7 @@
         "tagline": "Adicione já proteção automática contra inadimplência",
         "description": "Recupere valores em atraso automaticamente dos recebíveis de clientes, sem call center, processos judiciais ou desgaste no relacionamento. Você elimina custos de cobrança, seus clientes evitam negativação e mantêm acesso aos seus produtos - todos saem ganhando.",
         "image": {
-          "src": "/credito-justo.png",
+          "src": "/vendas-prazo.png",
           "alt": "Proteja Suas Vendas a Prazo",
           "width": 400,
           "height": 300
@@ -114,5 +114,16 @@
   "flow": {
     "src": "/fluxo-como-funciona.png",
     "alt": "Fluxo de como funciona o Tokeen"
+  },
+  "lastnews": {
+    "title": "Como a Resolução CMN nº 4.734 veio mudar o mercado de crédito",
+    "excerpt": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tinci",
+    "url": "https://globo.com",
+    "image": {
+      "src": "/distribuidores.png",
+      "alt": "Distribuidores e Indústrias",
+      "width": 400,
+      "height": 300
+    }
   }
 }

@@ -1,0 +1,86 @@
+{
+  "title": "Como funciona",
+  "computer": {
+    "src": "/como-funciona-computador.png",
+    "alt": "Fluxo de como funciona o Tokeen"
+  },
+  "comercial": {
+    "subtitle": "Soluções comerciais",
+    "items": [
+      {
+        "tag": "Prazo para quem compra, segurança para quem vende",
+        "title": "Cobrança Garantida",
+        "content": "Permita que seus clientes comprem a prazo usando os próprios recebíveis como garantia automática ou com boleto autoliquidável. Você vende mais sem risco de inadimplência, seu cliente compra sem antecipar na credenciadora ou comprometer capital de giro.",
+        "button": {
+          "label": "Saiba mais",
+          "url": "https://wa.me/551152399752?text=Olá,%20estava%20acessando%20o%20site%20Tokeen%20e%20gostaria%20de%20saber%20mais%20sobre%20Cobrança%20Garantida"
+        }
+      },
+      {
+        "tag": "Crédito rotativo que cresce com seu negócio",
+        "title": "Limite Garantido",
+        "content": "Ofereça uma linha de crédito rotativa para seus melhores clientes, garantida automaticamente pelos recebíveis deles. Seus clientes compram quando precisam sem burocracia a cada pedido - os recebíveis garantem o pagamento automático, eliminando risco de inadimplência.",
+        "button": {
+          "label": "Saiba mais",
+          "url": "https://wa.me/551152399752?text=Olá,%20estava%20acessando%20o%20site%20Tokeen%20e%20gostaria%20de%20saber%20mais%20sobre%20Cobrança%20Garantida"
+        }
+      },
+      {
+        "tag": "Receba sempre, sem cobrar nunca",
+        "title": "Cobrança Recorrente",
+        "content": "Automatize cobranças de contratos de longo prazo (aluguéis, royalties, fundos de marketing) debitando diretamente da agenda de recebíveis do contratante. Você recebe com previsibilidade total e zero atrito, seu cliente paga automaticamente sem stress ou esquecimentos.",
+        "button": {
+          "label": "Saiba mais",
+          "url": "https://wa.me/551152399752?text=Olá,%20estava%20acessando%20o%20site%20Tokeen%20e%20gostaria%20de%20saber%20mais%20sobre%20Cobrança%20Garantida"
+        }
+      },
+      {
+        "tag": "Recupere sem cobrar",
+        "title": "Recuperação Automática",
+        "content": "Recupere valores em atraso automaticamente da agenda de recebíveis do devedor, sem processos de cobrança, call center ou desgaste no relacionamento. O credor elimina custos operacionais de cobrança, o devedor evita negativação e mantém acesso a produtos, condições e benefícios.",
+        "button": {
+          "label": "Saiba mais",
+          "url": "https://wa.me/551152399752?text=Olá,%20estava%20acessando%20o%20site%20Tokeen%20e%20gostaria%20de%20saber%20mais%20sobre%20Cobrança%20Garantida"
+        }
+      },
+      {
+        "tag": "Fortaleça relacionamento dando fôlego financeiro à sua rede",
+        "title": "Programa de Antecipação",
+        "content": "Transforme-se em parceiro financeiro da sua rede oferecendo antecipação de recebíveis com taxas mais atrativas que credenciadoras tradicionais. Seus clientes acessam crédito mais barato para pagar folha, impostos e fornecedores, você fideliza com retorno financeiro superior ao de investimentos bancários.",
+        "button": {
+          "label": "Saiba mais",
+          "url": "https://wa.me/551152399752?text=Olá,%20estava%20acessando%20o%20site%20Tokeen%20e%20gostaria%20de%20saber%20mais%20sobre%20Cobrança%20Garantida"
+        }
+      }
+    ]
+  },
+  "enterprise": {
+    "subtitle": "Infraestrutura Institucional",
+    "items": [
+      {
+        "tag": "Seu braço tecnológico para recebíveis de cartão",
+        "title": "Tokeen Enterprise",
+        "content": "Infraestrutura completa para FIDCs e instituições financeiras lançarem soluções baseadas em recebíveis de cartão - antecipação, colateralização ou análise de crédito. Time dedicado, integrações prontas com registradoras e plataforma proprietária para gestão de liquidação, conciliação e baixa.",
+        "button": {
+          "label": "Saiba mais",
+          "url": "https://wa.me/551152399752?text=Olá,%20estava%20acessando%20o%20site%20Tokeen%20e%20gostaria%20de%20saber%20mais%20sobre%20Cobrança%20Garantida"
+        }
+      }
+    ]
+  },
+  "flow": {
+    "src": "/fluxo-como-funciona.png",
+    "alt": "Fluxo de como funciona o Tokeen"
+  },
+  "lastnews": {
+    "title": "Como a Resolução CMN nº 4.734 veio mudar o mercado de crédito",
+    "excerpt": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tinci",
+    "url": "https://globo.com",
+    "image": {
+      "src": "/distribuidores.png",
+      "alt": "Distribuidores e Indústrias",
+      "width": 400,
+      "height": 300
+    }
+  }
+}

@@ -2,7 +2,8 @@ import Container from "@/src/components/Container";
 import TitleContent from "@/src/components/TitleContent";
 import { Metadata } from "next";
 import Image from "next/image";
-import content from "@/src/data/howItWorks.json";
+import LastNews from "@/src/components/LastNews/LastNews";
+import content from "@/src/data/solutions.json";
 
 export const metadata: Metadata = {
   title: "Como funciona - Tokeen",
@@ -11,7 +12,7 @@ export const metadata: Metadata = {
 };
 
 export default async function BlogPage() {
-  const { list } = content;
+  const { comercial, enterprise, lastnews } = content;
 
   return (
     <>
@@ -28,12 +29,22 @@ export default async function BlogPage() {
 
       <section>
         <Container>
-          {list.map((item) => (
-            <TitleContent
-              key={item.title}
-              title={item.title}
-              content={item.content}
-            />
+          <h2 className="text-4xl text-center mb-10">{comercial.subtitle}</h2>
+          {comercial.items.map((item, index) => (
+            <TitleContent key={index} {...item} />
+          ))}
+        </Container>
+      </section>
+
+      <Container>
+        <hr className="border-[#69BD45]" />
+      </Container>
+
+      <section>
+        <Container>
+          <h2 className="text-4xl text-center mb-10">{enterprise.subtitle}</h2>
+          {enterprise.items.map((item, index) => (
+            <TitleContent key={index} {...item} />
           ))}
         </Container>
       </section>
@@ -46,6 +57,12 @@ export default async function BlogPage() {
             width={800}
             height={600}
           />
+        </Container>
+      </section>
+
+      <section className="news">
+        <Container>
+          <LastNews {...lastnews} />
         </Container>
       </section>
     </>

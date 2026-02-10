@@ -23,7 +23,7 @@ export default async function BlogList() {
           {posts.map((post: any) => (
             <li key={post._id} className="mb-2">
               <Link
-                href={`/blog/${post.slug.current}`}
+                href={`/entendendo-do-assunto/${post.slug.current}`}
                 className="text-blue-600 hover:underline"
               >
                 {new Date(post._createdAt).toLocaleDateString("pt-BR")} .{" "}

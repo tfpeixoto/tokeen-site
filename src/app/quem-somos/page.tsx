@@ -1,14 +1,15 @@
 import Container from "@/src/components/Container";
 import Highlight from "@/src/components/Highlight";
+import LastNews from "@/src/components/LastNews/LastNews";
 import pageContent from "@/src/data/whoWeAre.json";
 
 export default async function BlogPage() {
-  const { title, content, contentBox } = pageContent;
+  const { title, content, contentBox, lastnews } = pageContent;
 
   return (
     <>
       <section>
-        <Container className="flex gap-28 flex-col md:flex-row">
+        <Container className="flex gap-8 md:gap-28 flex-col md:flex-row">
           <div className="min-w-48">
             <h1 className="font-black text-[#4D9234] text-5xl lowercase">
               {title}
@@ -16,7 +17,7 @@ export default async function BlogPage() {
           </div>
 
           <div
-            className="text-xl"
+            className="text-xl leading-7"
             dangerouslySetInnerHTML={{ __html: content }}
           />
         </Container>
@@ -26,11 +27,17 @@ export default async function BlogPage() {
 
       <section>
         <Container className="flex gap-28 flex-col md:flex-row">
-          <div className="min-w-48"></div>
+          <div className="min-w-48 hidden md:block"></div>
           <div
             className="text-xl"
             dangerouslySetInnerHTML={{ __html: contentBox }}
           />
+        </Container>
+      </section>
+
+      <section className="news">
+        <Container>
+          <LastNews {...lastnews} />
         </Container>
       </section>
     </>

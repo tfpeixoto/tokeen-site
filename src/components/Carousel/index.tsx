@@ -63,7 +63,7 @@ export default function Carousel({ title, subtitle, items }: CarouselProps) {
           {items.map((item, index) => (
             <SwiperSlide key={index}>
               <div className="grid md:grid-cols-2">
-                <div className="carousel__image">
+                <div className="carousel__image flex align-center">
                   <Image
                     src={item.image.src}
                     alt={item.image.alt}
@@ -73,14 +73,14 @@ export default function Carousel({ title, subtitle, items }: CarouselProps) {
                 </div>
 
                 <div className="carousel__content text-left flex flex-col justify-center">
-                  <p>{item.tagline}</p>
-                  <h3 className="text-3xl font-bold mb-[16]">{item.title}</h3>
+                  <span className="text-sm uppercase pb-2 text-[#FFE388]">{item.tagline}</span>
+                  <h3 className="text-4xl font-bold mb-8">{item.title}</h3>
                   <p dangerouslySetInnerHTML={{ __html: item.description }} />
-                </div>
 
-                <div className="carousel__buttons">
-                  <a href={item.button.href}>{item.button.label}</a>
-                  <a href={item.whatsapp.href}>{item.whatsapp.label}</a>
+                  <div className="carousel__buttons flex gap-4">
+                    <a href={item.button.href} className="p-2 bg-white text-[black] rounded">{item.button.label}</a>
+                    <a href={item.whatsapp.href} className="p-2 bg-black text-[white] rounded border">{item.whatsapp.label}</a>
+                  </div>
                 </div>
               </div>
             </SwiperSlide>

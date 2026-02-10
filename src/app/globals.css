@@ -43,3 +43,25 @@ strong {
 a {
   transition: all ease-in-out .3s;
 }
+
+.swiper {
+  padding: 3rem 0 !important;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  width: 1rem !important;
+
+  svg {
+    color: white;
+    fill: white;
+  }
+}
+
+.swiper-pagination-bullet {
+  background-color: white !important;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: white !important;
+}

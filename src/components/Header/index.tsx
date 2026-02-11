@@ -33,7 +33,7 @@ export default function Header() {
           >
             <FontAwesomeIcon
               icon={faBars}
-              className="w-[32] h-[32] flex md:hidden"
+              className="text-xl w-[32] h-[32] flex md:hidden"
             />
           </button>
         </div>
@@ -47,7 +47,7 @@ export default function Header() {
               >
                 <Link
                   href={item.href}
-                  className="hover:text-[#69BD45] hover:font-bold"
+                  className="hover:text-green hover:font-bold"
                 >
                   {item.label}
                 </Link>
@@ -69,7 +69,7 @@ export default function Header() {
           className={`
           fixed inset-0 z-50 transform md:hidden
           ${isOpen ? "translate-x-0" : "translate-x-full"} 
-          transition-transform duration-300 ease-in-out bg-[#171717]
+          transition-transform duration-300 ease-in-out bg-soft-black
         `}
         >
           <div className="flex justify-end p-6">
@@ -87,7 +87,7 @@ export default function Header() {
                 <Link
                   href={item.href}
                   onClick={() => setIsOpen(false)}
-                  className="text-2xl hover:text-[#69BD45] hover:font-bold"
+                  className="text-2xl hover:text-green hover:font-bold"
                 >
                   {item.label}
                 </Link>

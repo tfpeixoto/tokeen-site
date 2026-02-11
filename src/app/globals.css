@@ -13,11 +13,17 @@
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --font-poppins: var(--font-poppins);
+  --color-soft-black: #171717;
+  --color-green: #69BD45;
+  --color-dark-green: #0B8B63;
+  --color-soft-green: #4CAB8E;
+  --color-yellow: #FFDD1F;
+  --color-gold: #FFE388;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0F1218;
+    --background: #171717;
     --foreground: #ffffff;
     --dark-green: #0B8B63;
     --soft-green: #4CAB8E;
@@ -27,13 +33,12 @@
 }
 
 body {
-  background: var(--background);
+  background-image: url("/bg-hero.png");
+  background-repeat: repeat-y;
+  background-size: contain;
+  background-color: var(--background);
   color: var(--foreground);
   font-family: var(--font-poppins), Arial, Helvetica, sans-serif;
-}
-
-p {
-  padding-bottom: 1rem;
 }
 
 strong {
@@ -42,6 +47,12 @@ strong {
 
 a {
   transition: all ease-in-out .3s;
+}
+
+.quem-somos {
+  p {
+    padding-bottom: 1rem;
+  }
 }
 
 .swiper {

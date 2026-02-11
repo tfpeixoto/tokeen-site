@@ -1,6 +1,6 @@
 {
   "hero": {
-    "title": "O dinheiro de <strong>amanhã</strong>, trabalhando hoje.",
+    "title": "O dinheiro de <strong>amanhã</strong>, trabalhando <strong>hoje</strong>.",
     "description": "Transforme recebíveis em mais negócios: crédito inteligente com menos risco e controle total.",
     "button": {
       "label": "Descubra como",
@@ -23,11 +23,13 @@
         },
         "button": {
           "label": "Conheça as Soluções",
-          "href": "/solucoes"
+          "href": "/solucoes",
+          "target": "_blank"
         },
         "whatsapp": {
           "label": "Fale com nosso time",
-          "href": "https://wa.me/551152399752?text=Olá,%20estava%20acessando%20o%20site%20Tokeen%20e%20gostaria%20de%20falar%20com%20o%20time"
+          "href": "https://wa.me/551152399752?text=Olá,%20estava%20acessando%20o%20site%20Tokeen%20e%20gostaria%20de%20falar%20com%20o%20time",
+          "target": "_blank"
         }
       },
       {
@@ -42,11 +44,13 @@
         },
         "button": {
           "label": "Conheça as Soluções",
-          "href": "/solucoes"
+          "href": "/solucoes",
+          "target": "_blank"
         },
         "whatsapp": {
           "label": "Fale com nosso time",
-          "href": "https://wa.me/551152399752?text=Olá,%20estava%20acessando%20o%20site%20Tokeen%20e%20gostaria%20de%20falar%20com%20o%20time"
+          "href": "https://wa.me/551152399752?text=Olá,%20estava%20acessando%20o%20site%20Tokeen%20e%20gostaria%20de%20falar%20com%20o%20time",
+          "target": "_blank"
         }
       },
       {
@@ -61,11 +65,13 @@
         },
         "button": {
           "label": "Conheça as Soluções",
-          "href": "/solucoes"
+          "href": "/solucoes",
+          "target": "_blank"
         },
         "whatsapp": {
           "label": "Fale com nosso time",
-          "href": "https://wa.me/551152399752?text=Olá,%20estava%20acessando%20o%20site%20Tokeen%20e%20gostaria%20de%20falar%20com%20o%20time"
+          "href": "https://wa.me/551152399752?text=Olá,%20estava%20acessando%20o%20site%20Tokeen%20e%20gostaria%20de%20falar%20com%20o%20time",
+          "target": "_blank"
         }
       },
       {
@@ -80,11 +86,13 @@
         },
         "button": {
           "label": "Conheça as Soluções",
-          "href": "/solucoes"
+          "href": "/solucoes",
+          "target": "_blank"
         },
         "whatsapp": {
           "label": "Fale com nosso time",
-          "href": "https://wa.me/551152399752?text=Olá,%20estava%20acessando%20o%20site%20Tokeen%20e%20gostaria%20de%20falar%20com%20o%20time"
+          "href": "https://wa.me/551152399752?text=Olá,%20estava%20acessando%20o%20site%20Tokeen%20e%20gostaria%20de%20falar%20com%20o%20time",
+          "target": "_blank"
         }
       },
       {
@@ -99,11 +107,13 @@
         },
         "button": {
           "label": "Conheça as Soluções",
-          "href": "/solucoes"
+          "href": "/solucoes",
+          "target": "_blank"
         },
         "whatsapp": {
           "label": "Fale com nosso time",
-          "href": "https://wa.me/551152399752?text=Olá,%20estava%20acessando%20o%20site%20Tokeen%20e%20gostaria%20de%20falar%20com%20o%20time"
+          "href": "https://wa.me/551152399752?text=Olá,%20estava%20acessando%20o%20site%20Tokeen%20e%20gostaria%20de%20falar%20com%20o%20time",
+          "target": "_blank"
         }
       }
     ]

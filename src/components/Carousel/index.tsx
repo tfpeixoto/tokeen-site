@@ -34,6 +34,7 @@ type ImageProps = {
 type ButtonProps = {
   label: string;
   href: string;
+  target?: string;
 };
 
 export default function Carousel({ title, subtitle, items }: CarouselProps) {
@@ -41,8 +42,10 @@ export default function Carousel({ title, subtitle, items }: CarouselProps) {
     <section className="carousel mb-12 text-center">
       <Container>
         <div className="carousel__title">
-          <h2 className="text-3xl font-extralight mb-4">{title}</h2>
-          <p>{subtitle}</p>
+          <h2 className="text-4xl font-extralight mb-4 text-balance">
+            {title}
+          </h2>
+          <p className="text-lg">{subtitle}</p>
         </div>
       </Container>
 
@@ -73,13 +76,30 @@ export default function Carousel({ title, subtitle, items }: CarouselProps) {
                 </div>
 
                 <div className="carousel__content text-left flex flex-col justify-center">
-                  <span className="text-sm uppercase pb-2 text-[#FFE388]">{item.tagline}</span>
+                  <span className="text-sm uppercase pb-2 text-yellow text-balance">
+                    {item.tagline}
+                  </span>
                   <h3 className="text-4xl font-bold mb-8">{item.title}</h3>
-                  <p dangerouslySetInnerHTML={{ __html: item.description }} />
+                  <p
+                    className="mb-6"
+                    dangerouslySetInnerHTML={{ __html: item.description }}
+                  />
 
                   <div className="carousel__buttons flex gap-4">
-                    <a href={item.button.href} className="p-2 bg-white text-[black] rounded">{item.button.label}</a>
-                    <a href={item.whatsapp.href} className="p-2 bg-black text-[white] rounded border">{item.whatsapp.label}</a>
+                    <a
+                      href={item.button.href}
+                      className="p-2 bg-white text-soft-black rounded border hover:bg-soft-black hover:text-white leading-4 text-center text-balance"
+                      target={item.button.target ?? "_self"}
+                    >
+                      {item.button.label}
+                    </a>
+                    <a
+                      href={item.whatsapp.href}
+                      target={item.whatsapp.target ?? "_self"}
+                      className="p-2 bg-soft-black text-white rounded border hover:bg-white hover:text-soft-black leading-4 text-center text-balance"
+                    >
+                      {item.whatsapp.label}
+                    </a>
                   </div>
                 </div>
               </div>

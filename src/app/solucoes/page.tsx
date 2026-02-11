@@ -17,7 +17,7 @@ export default async function BlogPage() {
   return (
     <>
       <section>
-        <Container>
+        <Container className="md:pl-52">
           <Image
             src={content.computer.src}
             alt={content.computer.alt}
@@ -28,8 +28,8 @@ export default async function BlogPage() {
       </section>
 
       <section>
-        <Container>
-          <h2 className="text-4xl text-center mb-10">{comercial.subtitle}</h2>
+        <Container className="md:pl-52">
+          <h2 className="text-5xl text-green font-bold mb-10">{comercial.subtitle}</h2>
           {comercial.items.map((item, index) => (
             <TitleContent key={index} {...item} />
           ))}
@@ -37,12 +37,12 @@ export default async function BlogPage() {
       </section>
 
       <Container>
-        <hr className="border-[#69BD45]" />
+        <hr className="border-green" />
       </Container>
 
       <section>
-        <Container>
-          <h2 className="text-4xl text-center mb-10">{enterprise.subtitle}</h2>
+        <Container className="md:pl-52">
+          <h2 className="text-5xl text-green font-bold mb-10">{enterprise.subtitle}</h2>
           {enterprise.items.map((item, index) => (
             <TitleContent key={index} {...item} />
           ))}

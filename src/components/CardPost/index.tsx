@@ -38,13 +38,13 @@ export default async function CardPost({
         href={`/entendendo-do-assunto/${slug.current}`}
         className="block hover:opacity-80 transition-opacity"
       >
-        {/* <Image
+        <Image
           src={urlFor(image).width(400).height(200).url()}
           alt=""
           width={400}
           height={200}
           className="mb-10"
-        /> */}
+        />
 
         <h2 className="text-2xl font-semibold mb-2 text-white hover:text-blue-600">
           {title}

@@ -47,21 +47,25 @@ export default function Header() {
               >
                 <Link
                   href={item.href}
+                  target={item.target ?? "_self"}
                   className="hover:text-green hover:font-bold"
                 >
                   {item.label}
                 </Link>
               </li>
             ))}
-            <li className="flex items-center text-center px-2 leading-4 text-balance max-w-[120]">
-              <Link
-                href={cta.href}
-                target={cta.target || ""}
-                className="bg-[#4D34AC] text-white uppercase p-2 rounded font-bold hover:bg-white hover:text-[#4D34AC]"
-              >
-                {cta.label}
-              </Link>
-            </li>
+
+            {cta && (
+              <li className="flex items-center text-center px-2 leading-4 text-balance max-w-[120]">
+                <Link
+                  href={cta.href}
+                  target={cta.target || ""}
+                  className="bg-[#4D34AC] text-white uppercase p-2 rounded font-bold hover:bg-white hover:text-[#4D34AC]"
+                >
+                  {cta.label}
+                </Link>
+              </li>
+            )}
           </ul>
         </div>
 
@@ -86,6 +90,7 @@ export default function Header() {
               <li key={index} className="text-center m-2 w-full">
                 <Link
                   href={item.href}
+                  target={item.target ?? "_self"}
                   onClick={() => setIsOpen(false)}
                   className="text-2xl hover:text-green hover:font-bold"
                 >
@@ -93,15 +98,18 @@ export default function Header() {
                 </Link>
               </li>
             ))}
-            <li className="text-center w-full mt-10">
-              <Link
-                href={cta.href}
-                target={cta.target || ""}
-                className="bg-[#4D34AC] text-white uppercase p-2 rounded font-bold hover:bg-white hover:text-[#4D34AC]"
-              >
-                {cta.label}
-              </Link>
-            </li>
+
+            {cta && (
+              <li className="text-center w-full mt-10">
+                <Link
+                  href={cta.href}
+                  target={cta.target || ""}
+                  className="bg-[#4D34AC] text-white uppercase p-2 rounded font-bold hover:bg-white hover:text-[#4D34AC]"
+                >
+                  {cta.label}
+                </Link>
+              </li>
+            )}
           </ul>
         </div>
       </Container>

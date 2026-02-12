@@ -49,17 +49,6 @@ export default async function BlogPage() {
         </Container>
       </section>
 
-      <section>
-        <Container>
-          <Image
-            src={content.flow.src}
-            alt={content.flow.alt}
-            width={800}
-            height={600}
-          />
-        </Container>
-      </section>
-
       <section className="news">
         <Container>
           <LastNews {...lastnews} />

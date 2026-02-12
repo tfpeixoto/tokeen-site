@@ -88,7 +88,7 @@ export default function Carousel({ title, subtitle, items }: CarouselProps) {
                   <div className="carousel__buttons flex gap-4">
                     <a
                       href={item.button.href}
-                      className="p-2 bg-white text-soft-black rounded border hover:bg-soft-black hover:text-white leading-4 text-center text-balance"
+                      className="p-2 bg-soft-black text-white rounded border hover:bg-white hover:text-soft-black leading-4 text-center text-balance"
                       target={item.button.target ?? "_self"}
                     >
                       {item.button.label}

@@ -50,8 +50,6 @@ export default async function PostPage({
   const resolvedParams = await params;
   const post: Post = await getPost(resolvedParams.slug);
 
-  console.log(post.image.asset._ref);
-
   if (!post) {
     notFound();
   }

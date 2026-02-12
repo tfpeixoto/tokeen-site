@@ -1,37 +1,28 @@
 import { client } from "@/sanity/client";
-import Link from "next/link";
 import Container from "../Container";
+import CardPost from "../CardPost";
+import { CardPostProps } from "../CardPost";
 
 // Busca os dados no servidor (Server Component)
 async function getPosts() {
-  return client.fetch(`*[_type == "post"]{_id, title, slug, _createdAt}`);
+  return client.fetch(
+    `*[_type == "post"]{_id, title, slug, _createdAt, image}`,
+  );
 }
 
 export default async function BlogList() {
   const posts = await getPosts();
 
-  return (
-    <section>
-      <Container>
-        <h2 className="text-3xl font-bold mb-5 text-center">
-          O que era futuro vira <strong>liquidez</strong>. O que era risco vira{" "}
-          <strong>confiança</strong>. O que era burocracia vira{" "}
-          <strong>fluxo</strong>.
-        </h2>
+  console.log(posts);
 
-        <ul>
-          {posts.map((post: any) => (
-            <li key={post._id} className="mb-2">
-              <Link
-                href={`/entendendo-do-assunto/${post.slug.current}`}
-                className="text-blue-600 hover:underline"
-              >
-                {new Date(post._createdAt).toLocaleDateString("pt-BR")} .{" "}
-                {post.title}
-              </Link>
-            </li>
+  return (
+    <section className="bloglist">
+      <Container>
+        <div className="grid grid-cols-3 gap-6">
+          {posts.map((post: CardPostProps) => (
+            <CardPost key={post._id} {...post} />
           ))}
-        </ul>
+        </div>
       </Container>
     </section>
   );

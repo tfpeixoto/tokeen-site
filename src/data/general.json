@@ -21,17 +21,27 @@
       },
       {
         "label": "Fale com nosso time",
-        "href": "/fale-conosco"
+        "href": "https://wa.me/551152399752?text=Olá,%20estava%20acessando%20o%20site%20Tokeen%20e%20gostaria%20de%20falar%20com%20o%20time",
+        "target": "_blank"
       }
-    ],
-    "cta": {
-      "label": "Entre",
-      "href": "https://app.tokeen.com.br/login",
-      "target": "_blank"
-    }
+    ]
   },
   "footer": {
     "info": "Razão Social: Tokeen Intermediações Ltda<br />CNPJ: 49.890.552/0001-01<br />Endereço: Rua do Rocio, 291, 8º andar - Conj 82 - Vila Olímpia, São Paulo/SP",
+    "stamp": {
+      "intro": "Associados",
+      "url": "https://www.abf.com.br",
+      "image": {
+        "src": "/abf-branca.png",
+        "alt": "Marca Tokeen",
+        "width": 158,
+        "height": 54
+      }
+    },
+    "whatsapp": {
+      "label": "Fale com a gente",
+      "url": "https://wa.me/551152399752?text=Olá,%20estava%20acessando%20o%20site%20Tokeen%20e%20gostaria%20de%20saber%20mais%20sobre%20a%20Tokeen"
+    },
     "social": [
       {
         "name": "email",

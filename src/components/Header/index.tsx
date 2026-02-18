@@ -10,7 +10,7 @@ import pageContent from "@/src/data/general.json";
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
-  const { logo, menu, cta } = pageContent.header;
+  const { logo, menu, cta } = pageContent.header as typeof pageContent.header & { cta?: { label: string; href: string; target?: string } };
 
   return (
     <header className="header">

@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import { urlFor } from "@/sanity/imageUrl";
+import { urlFor } from "@/src/lib/sanity.image";
 
 export type CardPostProps = {
   _id: string;
@@ -12,6 +12,7 @@ export type CardPostProps = {
       _ref: string;
       _type: string;
     };
+    alt?: string;
   };
   content: string;
 };
@@ -21,7 +22,7 @@ type SlugProps = {
   _type: string;
 };
 
-export default async function CardPost({
+export default function CardPost({
   _id,
   slug,
   title,
@@ -32,21 +33,25 @@ export default async function CardPost({
   return (
     <article
       key={_id}
-      className="bg-black rounded flex flex-col md:flex-row gap-8 p-4 hover:scale-105"
+      className="bg-black rounded flex flex-col md:flex-row gap-8 p-5 hover:scale-105 hover:transition-all"
     >
       <Link
-        href={`/entendendo-do-assunto/${slug.current}`}
+        href={`/blog/${slug.current}`}
         className="block hover:opacity-80 transition-opacity"
       >
-        <Image
-          src={urlFor(image).width(400).height(200).url()}
-          alt=""
-          width={400}
-          height={200}
-          className="mb-10"
-        />
+        {image ? (
+          <Image
+            src={urlFor(image).width(400).height(300).url()}
+            alt={image?.alt || ""}
+            height={300}
+            width={400}
+            className="mb-5"
+          />
+        ) : (
+          <div className="bg-gray-800 aspect-4/3 mb-5"></div>
+        )}
 
-        <h2 className="text-2xl font-semibold mb-2 text-white hover:text-blue-600">
+        <h2 className="text-xl font-semibold mb-2 text-white leading-6 hover:text-green">
           {title}
         </h2>
 

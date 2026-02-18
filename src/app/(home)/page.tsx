@@ -24,7 +24,13 @@ export default async function Home() {
 
       <section>
         <Container className="flex justify-center">
-          <Image src={flow.src} alt={flow.alt} width={800} height={600} className="text-center" />
+          <Image
+            src={flow.src}
+            alt={flow.alt}
+            width={800}
+            height={600}
+            className="text-center"
+          />
         </Container>
       </section>
 

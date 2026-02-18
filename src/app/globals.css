@@ -23,7 +23,7 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #171717;
+    --background: #0F1218;
     --foreground: #ffffff;
     --dark-green: #0B8B63;
     --soft-green: #4CAB8E;
@@ -33,9 +33,6 @@
 }
 
 body {
-  background-image: url("/bg-hero.png");
-  background-repeat: repeat-y;
-  background-size: contain;
   background-color: var(--background);
   color: var(--foreground);
   font-family: var(--font-poppins), Arial, Helvetica, sans-serif;
@@ -49,7 +46,14 @@ a {
   transition: all ease-in-out .3s;
 }
 
-.quem-somos {
+.background {
+  background-image: url("/bg-hero.png");
+  background-repeat: repeat-y;
+  background-size: contain;
+}
+
+.quem-somos,
+.post-content {
   p {
     padding-bottom: 1rem;
   }

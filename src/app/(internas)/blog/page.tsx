@@ -14,7 +14,7 @@ export default async function BlogPage() {
         </Container>
       </section>
 
-      <BlogList />
+      <BlogList initialPostsCount={1} />
     </>
   );
 }

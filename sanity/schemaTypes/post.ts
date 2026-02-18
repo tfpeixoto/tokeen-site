@@ -21,11 +21,7 @@ export const postType = defineType({
       type: "image",
       fields: [
         defineField({
-          name: "caption",
-          type: "string",
-        }),
-        defineField({
-          name: "attribution",
+          name: "alt",
           type: "string",
         }),
       ],

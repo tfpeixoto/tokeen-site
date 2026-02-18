@@ -43,7 +43,7 @@ export default function Header() {
             {menu.map((item, index) => (
               <li
                 key={index}
-                className="flex items-center text-center px-2 leading-4 text-balance max-w-[120]"
+                className="flex items-center text-center px-2 leading-4 text-balance w-[120]"
               >
                 <Link
                   href={item.href}
@@ -56,7 +56,7 @@ export default function Header() {
             ))}
 
             {cta && (
-              <li className="flex items-center text-center px-2 leading-4 text-balance max-w-[120]">
+              <li className="flex items-center text-center px-2 leading-4 text-balance w-full">
                 <Link
                   href={cta.href}
                   target={cta.target || ""}

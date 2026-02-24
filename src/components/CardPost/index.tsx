@@ -6,7 +6,7 @@ export type CardPostProps = {
   _id: string;
   slug: SlugProps;
   title: string;
-  _createdAt: string;
+  publishedAt: string;
   image?: {
     asset: {
       _ref: string;
@@ -26,7 +26,7 @@ export default function CardPost({
   _id,
   slug,
   title,
-  _createdAt,
+  publishedAt,
   image,
   content,
 }: CardPostProps) {
@@ -56,7 +56,7 @@ export default function CardPost({
         </h2>
 
         <p className="text-gray-500 text-sm">
-          {new Date(_createdAt).toLocaleDateString("pt-BR")}
+          {new Date(publishedAt).toLocaleDateString("pt-BR")}
         </p>
 
         {content && <p>{content}</p>}

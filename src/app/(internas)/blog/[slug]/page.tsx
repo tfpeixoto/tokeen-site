@@ -7,9 +7,15 @@ import { urlFor } from "@/src/lib/sanity.image";
 interface Post {
   _id: string;
   title: string;
-  _createdAt: string;
+  publishedAt: string;
   content: any;
   image?: any;
+  tags?: string[];
+  author?: {
+    name: string;
+    position: string;
+    description: string;
+  };
 }
 
 export const revalidate = 60;
@@ -19,12 +25,18 @@ async function getPost(slug: string) {
     *[_type == "post" && slug.current == $slug][0] {
       _id,
       title,
-      _createdAt,
+      publishedAt,
       content,
+      tags,
       image {
         asset,
         hotspot,
         alt
+      },
+      author->{
+        name,
+        position,
+        description
       }}`;
   const post = await client.fetch(query, { slug });
 
@@ -61,8 +73,32 @@ export default async function PostPage({
         <h1 className="text-5xl font-bold mb-2 text-green">{post.title}</h1>
       </header>
 
-      <div className="post-content text-2xl font-light leading-9">
+      <div className="post-content text-xl font-light leading-8">
         <PortableText value={post.content} />
+
+        {post.tags && post.tags.length > 0 && (
+          <div className="mt-8 flex flex-wrap gap-2">
+            {post.tags.map((tag, index) => (
+              <span
+                key={index}
+                className="px-3 py-1 bg-soft-green text-black text-sm rounded-full"
+              >
+                {tag}
+              </span>
+            ))}
+          </div>
+        )}
+
+        {post.author && (
+          <div className="mt-6 pt-6 border-t border-gray-700">
+            <p className="text-lg font-semibold">{post.author.name} | {post.author.position}</p>
+            {post.author.description && (
+              <p className="text-sm text-gray-300">
+                {post.author.description}
+              </p>
+            )}
+          </div>
+        )}
       </div>
     </article>
   );

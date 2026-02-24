@@ -22,6 +22,12 @@ export const postType = defineType({
       type: "datetime",
     }),
     defineField({
+      name: "author",
+      title: "Autor",
+      type: "reference",
+      to: [{ type: "author" }],
+    }),
+    defineField({
       name: "image",
       type: "image",
       fields: [
@@ -45,6 +51,12 @@ export const postType = defineType({
       title: "Conteúdo",
       type: "array",
       of: [{ type: "block" }],
+    }),
+    defineField({
+      name: "tags",
+      title: "Tags",
+      type: "array",
+      of: [{ type: "string" }],
     }),
   ],
 });

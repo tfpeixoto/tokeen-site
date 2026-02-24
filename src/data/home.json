@@ -19,7 +19,7 @@
           "src": "/distribuidores.png",
           "alt": "Distribuidores e Indústrias",
           "width": 400,
-          "height": 300
+          "height": 225
         },
         "button": {
           "label": "Conheça as Soluções",
@@ -39,7 +39,7 @@
           "src": "/franquias.png",
           "alt": "Franquias, Shopping Centers e Imobiliárias",
           "width": 400,
-          "height": 300
+          "height": 225
         },
         "button": {
           "label": "Conheça as Soluções",
@@ -59,7 +59,7 @@
           "src": "/atacarejos.png",
           "alt": "Atacarejos",
           "width": 400,
-          "height": 300
+          "height": 225
         },
         "button": {
           "label": "Conheça as Soluções",
@@ -79,7 +79,7 @@
           "src": "/fidcs.png",
           "alt": "FIDCs e Instituições Financeiras",
           "width": 400,
-          "height": 300
+          "height": 225
         },
         "button": {
           "label": "Conheça as Soluções",
@@ -99,7 +99,7 @@
           "src": "/vendas-prazo.png",
           "alt": "Proteja Suas Vendas a Prazo",
           "width": 400,
-          "height": 300
+          "height": 225
         },
         "button": {
           "label": "Conheça as Soluções",

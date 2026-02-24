@@ -58,5 +58,11 @@ export const postType = defineType({
       type: "array",
       of: [{ type: "string" }],
     }),
+    defineField({
+      name: "featured",
+      title: "Destaque",
+      type: "boolean",
+      initialValue: false,
+    }),
   ],
 });

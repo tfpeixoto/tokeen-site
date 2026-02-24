@@ -1,9 +1,11 @@
 import Container from "@/src/components/Container";
 import LastNews from "@/src/components/LastNews/LastNews";
 import pageContent from "@/src/data/whoWeAre.json";
+import { getFeaturedPost } from "@/src/lib/getFeaturedPost";
 
 export default async function BlogPage() {
-  const { title, content, lastnews } = pageContent;
+  const { title, content } = pageContent;
+  const lastnews = await getFeaturedPost();
 
   return (
     <>
@@ -24,7 +26,7 @@ export default async function BlogPage() {
 
       <section className="news">
         <Container>
-          <LastNews {...lastnews} />
+          {lastnews && <LastNews {...lastnews} />}
         </Container>
       </section>
     </>

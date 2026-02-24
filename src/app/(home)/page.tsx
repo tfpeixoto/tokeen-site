@@ -6,6 +6,7 @@ import Carousel from "@/src/components/Carousel";
 import pageContent from "@/src/data/home.json";
 import { Metadata } from "next";
 import LastNews from "@/src/components/LastNews/LastNews";
+import { getFeaturedPost } from "@/src/lib/getFeaturedPost";
 
 export const metadata: Metadata = {
   title: "Tokeen - O dinheiro de amanhã, trabalhando hoje",
@@ -14,7 +15,8 @@ export const metadata: Metadata = {
 };
 
 export default async function Home() {
-  const { hero, carousel, hightlight, flow, lastnews } = pageContent;
+  const { hero, carousel, hightlight, flow } = pageContent;
+  const lastnews = await getFeaturedPost();
 
   return (
     <>
@@ -36,7 +38,7 @@ export default async function Home() {
 
       <section className="news">
         <Container>
-          <LastNews {...lastnews} />
+          {lastnews && <LastNews {...lastnews} />}
         </Container>
       </section>
     </>

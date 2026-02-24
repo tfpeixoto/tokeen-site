@@ -4,6 +4,7 @@ import { Metadata } from "next";
 import Image from "next/image";
 import LastNews from "@/src/components/LastNews/LastNews";
 import content from "@/src/data/solutions.json";
+import { getFeaturedPost } from "@/src/lib/getFeaturedPost";
 
 export const metadata: Metadata = {
   title: "Como funciona - Tokeen",
@@ -12,7 +13,8 @@ export const metadata: Metadata = {
 };
 
 export default async function BlogPage() {
-  const { comercial, enterprise, lastnews } = content;
+  const { comercial, enterprise } = content;
+  const lastnews = await getFeaturedPost();
 
   return (
     <>
@@ -51,7 +53,7 @@ export default async function BlogPage() {
 
       <section className="news">
         <Container>
-          <LastNews {...lastnews} />
+          {lastnews && <LastNews {...lastnews} />}
         </Container>
       </section>
     </>

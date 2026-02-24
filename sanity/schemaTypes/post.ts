@@ -17,15 +17,22 @@ export const postType = defineType({
       options: { source: "title" },
     }),
     defineField({
+      name: "publishedAt",
+      title: "Data de Publicação",
+      type: "datetime",
+    }),
+    defineField({
+      name: "author",
+      title: "Autor",
+      type: "reference",
+      to: [{ type: "author" }],
+    }),
+    defineField({
       name: "image",
       type: "image",
       fields: [
         defineField({
-          name: "caption",
-          type: "string",
-        }),
-        defineField({
-          name: "attribution",
+          name: "alt",
           type: "string",
         }),
       ],
@@ -44,6 +51,18 @@ export const postType = defineType({
       title: "Conteúdo",
       type: "array",
       of: [{ type: "block" }],
+    }),
+    defineField({
+      name: "tags",
+      title: "Tags",
+      type: "array",
+      of: [{ type: "string" }],
+    }),
+    defineField({
+      name: "featured",
+      title: "Destaque",
+      type: "boolean",
+      initialValue: false,
     }),
   ],
 });

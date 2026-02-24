@@ -1,31 +1,41 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #0F1218;
+  --foreground: #ffffff;
+  --dark-green: #0B8B63;
+  --soft-green: #4CAB8E;
+  --yellow: #FFDD1F;
+  --gold: #FFE388;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --font-poppins: var(--font-poppins);
+  --color-soft-black: #171717;
+  --color-green: #69BD45;
+  --color-dark-green: #0B8B63;
+  --color-soft-green: #4CAB8E;
+  --color-yellow: #FFDD1F;
+  --color-gold: #FFE388;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0F1218;
     --foreground: #ffffff;
+    --dark-green: #0B8B63;
+    --soft-green: #4CAB8E;
+    --yellow: #FFDD1F;
+    --gold: #FFE388;
   }
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
+  background-color: var(--background);
+  color: white;
   font-family: var(--font-poppins), Arial, Helvetica, sans-serif;
-}
-
-p {
-  padding-bottom: 1rem;
 }
 
 strong {
@@ -34,4 +44,55 @@ strong {
 
 a {
   transition: all ease-in-out .3s;
+}
+
+.background {
+  background-image: url("/bg-hero.png");
+  background-repeat: repeat-y;
+  background-size: contain;
+}
+
+.quem-somos,
+.post-content {
+  h3 {
+    font-size: 2rem !important;
+    font-weight: 700 !important;
+    margin: 2.5rem 0 1.5rem 0 !important;
+  }
+
+  ul {
+    padding-inline-start: 2rem;
+    margin-bottom: 2rem;
+
+    li {
+      list-style: disc;
+      margin-bottom: 1rem;
+    }
+  }
+
+  p {
+    padding-bottom: 1rem;
+  }
+}
+
+.swiper {
+  padding: 3rem 2rem !important;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  width: 1rem !important;
+
+  svg {
+    color: white;
+    fill: white;
+  }
+}
+
+.swiper-pagination-bullet {
+  background-color: white !important;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: white !important;
 }

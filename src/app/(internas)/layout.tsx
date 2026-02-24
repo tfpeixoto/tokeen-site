@@ -2,8 +2,9 @@ import type { Metadata } from "next";
 import Header from "@/src/components/Header";
 import Footer from "@/src/components/Footer";
 import { Poppins } from "next/font/google";
+import { headers } from "next/headers";
 
-import "./globals.css";
+import "../globals.css";
 
 const poppins = Poppins({
   variable: "--font-poppins",
@@ -19,18 +20,22 @@ export const metadata: Metadata = {
   },
 };
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const headersList = await headers();
+  const pathname = headersList.get("x-pathname") || "";
+  const isAdmin = pathname.startsWith("/admin");
+
   return (
     <html lang="pt-br">
       <body className={`${poppins.variable} antialiased font-poppins`}>
         <main>
-          <Header />
+          {!isAdmin && <Header />}
           {children}
-          <Footer />
+          {!isAdmin && <Footer />}
         </main>
       </body>
     </html>

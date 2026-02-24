@@ -1,37 +1,63 @@
+"use client";
+
 import { client } from "@/sanity/client";
-import Link from "next/link";
 import Container from "../Container";
+import CardPost from "../CardPost";
+import { CardPostProps } from "../CardPost";
+import Loading from "../Loading/Loading";
+import { useEffect, useState } from "react";
 
-// Busca os dados no servidor (Server Component)
-async function getPosts() {
-  return client.fetch(`*[_type == "post"]{_id, title, slug, _createdAt}`);
-}
+export default function BlogList({
+  initialPostsCount = 1,
+}: {
+  initialPostsCount?: number;
+}) {
+  const [posts, setPosts] = useState<CardPostProps[]>([]);
+  const [visibleCount, setVisibleCount] = useState(initialPostsCount);
+  const [loading, setLoading] = useState(true);
 
-export default async function BlogList() {
-  const posts = await getPosts();
+  useEffect(() => {
+    client
+      .fetch(
+        `*[_type == "post"] | order(publishedAt desc){_id, title, slug, publishedAt, image {
+        asset,
+        hotspot,
+        alt
+      }}`,
+      )
+      .then(setPosts)
+      .finally(() => setLoading(false));
+  }, []);
+
+  const handleLoadMore = () => {
+    setVisibleCount((prev) => prev + 6);
+  };
 
   return (
-    <section>
+    <section className="bloglist">
       <Container>
-        <h2 className="text-3xl font-bold mb-5 text-center">
-          O que era futuro vira <strong>liquidez</strong>. O que era risco vira{" "}
-          <strong>confiança</strong>. O que era burocracia vira{" "}
-          <strong>fluxo</strong>.
-        </h2>
+        {loading ? (
+          <Loading />
+        ) : (
+          <>
+            <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+              {posts.slice(0, visibleCount).map((post: CardPostProps) => (
+                <CardPost key={post._id} {...post} />
+              ))}
+            </div>
 
-        <ul>
-          {posts.map((post: any) => (
-            <li key={post._id} className="mb-2">
-              <Link
-                href={`/blog/${post.slug.current}`}
-                className="text-blue-600 hover:underline"
-              >
-                {new Date(post._createdAt).toLocaleDateString("pt-BR")} .{" "}
-                {post.title}
-              </Link>
-            </li>
-          ))}
-        </ul>
+            {visibleCount < posts.length && (
+              <div className="flex justify-center mt-8">
+                <button
+                  onClick={handleLoadMore}
+                  className="px-6 py-3 bg-green text-white cursor-pointer rounded-lg hover:bg-green transition-colors"
+                >
+                  Carregar mais posts
+                </button>
+              </div>
+            )}
+          </>
+        )}
       </Container>
     </section>
   );

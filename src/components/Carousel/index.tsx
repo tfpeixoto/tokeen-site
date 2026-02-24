@@ -65,7 +65,7 @@ export default function Carousel({ title, subtitle, items }: CarouselProps) {
         >
           {items.map((item, index) => (
             <SwiperSlide key={index}>
-              <div className="grid md:grid-cols-2">
+              <div className="bg-background grid gap-6 md:grid-cols-2 p-6">
                 <div className="carousel__image flex align-center">
                   <Image
                     src={item.image.src}

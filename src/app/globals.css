@@ -54,13 +54,19 @@ a {
 
 .quem-somos,
 .post-content {
+  h3 {
+    font-size: 2rem !important;
+    font-weight: 700 !important;
+    margin: 2rem 0 1rem 0 !important;
+  }
+
   p {
     padding-bottom: 1rem;
   }
 }
 
 .swiper {
-  padding: 3rem 0 !important;
+  padding: 3rem 2rem !important;
 }
 
 .swiper-button-prev,

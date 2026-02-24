@@ -17,6 +17,11 @@ export const postType = defineType({
       options: { source: "title" },
     }),
     defineField({
+      name: "publishedAt",
+      title: "Data de Publicação",
+      type: "datetime",
+    }),
+    defineField({
       name: "image",
       type: "image",
       fields: [

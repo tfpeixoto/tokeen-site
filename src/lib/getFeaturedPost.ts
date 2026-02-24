@@ -28,10 +28,10 @@ export async function getFeaturedPost() {
     excerpt: excerpt ? `${excerpt}...` : undefined,
     image: featuredPost.image
       ? {
-          src: urlFor(featuredPost.image).width(400).height(300).url(),
+          src: urlFor(featuredPost.image).width(400).height(225).url(),
           alt: featuredPost.image.alt || "",
           width: 400,
-          height: 300,
+          height: 225,
         }
       : undefined,
   };

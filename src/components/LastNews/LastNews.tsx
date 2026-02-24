@@ -25,11 +25,11 @@ export default function LastNews({
   return (
     <a
       href={url}
-      target={target ?? "self"}
+      target={target ?? "_self"}
       className="bg-black flex flex-col md:flex-row gap-8 p-4 hover:scale-105"
     >
       {image && (
-        <div className="image">
+        <div className="image flex items-center justify-center">
           <Image
             src={image.src}
             alt={image.alt}
@@ -40,7 +40,7 @@ export default function LastNews({
       )}
 
       <div className ="content flex flex-col justify-center">
-        <h2 className="text-yellow text-sm font-bold lowercase mb-12">
+        <h2 className="text-yellow text-sm font-bold lowercase mb-6">
           Entendendo do assunto
         </h2>
 

@@ -51,6 +51,7 @@ export default function Footer() {
                   href={item.url}
                   className="text-2xl text-white hover:text-white"
                   target="_blank"
+                  aria-label={item.label}
                 >
                   <FontAwesomeIcon icon={iconMap[item.icon]} />
                 </a>

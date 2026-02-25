@@ -45,16 +45,19 @@
     "social": [
       {
         "name": "email",
+        "label": "Envie-nos um email",
         "icon": "faEnvelope",
         "url": "mailto:contato@tokeen.com.br"
       },
       {
         "name": "linkedin",
+        "label": "Visite nosso LinkedIn",
         "icon": "faLinkedin",
         "url": "https://linkedin.com/company/tokeen"
       },
       {
         "name": "instagram",
+        "label": "Visite nosso Instagram",
         "icon": "faInstagram",
         "url": "https://instagram.com/tokeen_oficial"
       }

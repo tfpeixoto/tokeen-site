@@ -81,6 +81,7 @@ export default function Header() {
               <FontAwesomeIcon
                 icon={faXmark}
                 className="w-[32] h-[32] flex md:hidden"
+                aria-label="Fechar menu"
               />
             </button>
           </div>
